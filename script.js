@@ -27,7 +27,8 @@ for(i=1;i<=num;i++){
 
 
             const div=document.createElement("DIV")
-            div.innerHTML=data["data"]['id'];
+           const ss= div.innerHTML=data["data"]['id'];
+            div.innerHTML+=`<div class="img-container"><img style="width:150px" src=https://reqres.in/img/faces/${ss}-image.jpg></div>`;
             document.body.appendChild(div);
             console.log(data)
         })
