@@ -24,6 +24,11 @@ for(i=1;i<=num;i++){
         fetch('https://reqres.in/api/users/'+i)
         .then(res=> res.json())
         .then(data => {
+
+
+            const div=document.createElement("DIV")
+            div.innerHTML=data["data"]['id'];
+            document.body.appendChild(div);
             console.log(data)
         })
         
